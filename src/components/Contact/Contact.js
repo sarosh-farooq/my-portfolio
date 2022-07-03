@@ -37,7 +37,7 @@ const Contact = () => {
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Name*" name="full_name" value={userData.full_name} onChange={postUserData} />
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Email Address*" name="email" value={userData.email} onChange={postUserData} />
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Message*" name="message" value={userData.message} onChange={postUserData} multiline rows={6} />
-                    <Button variant="contained" className={styles.Btn}>Submit</Button>
+                    <Button type="submit" variant="contained" className={styles.Btn}>Submit</Button>
                 </Box>
             </form>
         </Box>
