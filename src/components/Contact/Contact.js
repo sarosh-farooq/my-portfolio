@@ -7,7 +7,7 @@ import * as styles from './Contact.module.css'
 const Contact = () => {
 
     const [userData, setUserData] = useState({
-        full_name: "",
+        name: "",
         email: "",
         message: "",
     });
@@ -21,7 +21,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        if (userData.account_number == '' && userData.account_type == '' && userData.full_name == '' && userData.email == '' && userData.address == '' && userData.current_balance == '') {
+        if ( userData.name == '' && userData.email == '' && userData.message == '') {
             alert('Please fill the form completely')
         }
         else {
@@ -32,9 +32,9 @@ const Contact = () => {
     return (
         <Box id="contact" className={styles.contact}>
             <Typography className={styles.hello} variant="h2">Contact</Typography>
-            <form className={styles.form} name="contact" method='post' netlify onSubmit="submit">
+            <form className={styles.form} name="contact" method='POST' netlify onSubmit="submit">
                 <Box className={styles.contactBox}>
-                    <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Name*" name="full_name" value={userData.full_name} onChange={postUserData} />
+                    <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Name*" name="name" value={userData.name} onChange={postUserData} />
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Email Address*" name="email" value={userData.email} onChange={postUserData} />
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Message*" name="message" value={userData.message} onChange={postUserData} multiline rows={6} />
                     <Button type="submit" variant="contained" className={styles.Btn}>Submit</Button>
