@@ -69,7 +69,7 @@ export default function CustomizedTabs() {
             scrollTo('#portfolio')
         }
         else if (newValue == 4) {
-            scrollTo('#contact')
+            scrollTo('#contactme')
         }
     };
 
