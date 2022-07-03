@@ -1,0 +1,53 @@
+.Relative{
+    position: relative;
+}
+.hello {
+    opacity: .2 !important;
+    font-size: 200px !important;
+    font-weight: 500 !important;
+    letter-spacing: 10px !important;
+    font-weight: bolder !important;
+    font-family: 'Paytone One', sans-serif !important;
+}
+
+.noBold {
+    font-weight: 200;
+    
+}
+
+.hr {
+    background-color: var(--primary) !important;
+    /* color: var(--background) !important; */
+    height: 5px;
+    border-color: var(--primary);
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px 0px;
+}
+
+.smallHr {
+    background-color: var(--primary) !important;
+    /* color: var(--background) !important; */
+    height: 2px;
+    border-color: var(--primary);
+    border-radius: 10px;
+    width: 50px;
+    margin: 0px 10px;
+}
+
+.Flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    right: -130px;
+    top: 50%;
+    bottom: 50%;
+    transform: rotate(90deg);
+}
+
+
+.Btn{
+    transform: rotate(270deg);
+}

@@ -1,0 +1,52 @@
+.service {
+    margin: 70px 0px !important;
+}
+
+.hello {
+    opacity: .2 !important;
+    font-size: 120px !important;
+    font-weight: 500 !important;
+    letter-spacing: 2px !important;
+    font-weight: bolder !important;
+    font-family: 'Paytone One', sans-serif !important;
+    text-align: center !important;
+}
+
+.serviceDetail{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 250px !important;
+    padding: 20px !important;
+    border-radius: 5px !important;
+}
+.serviceDetail2{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 250px !important;
+    padding: 20px !important;
+    background-color: #ffffff21 !important;
+    border-radius: 5px !important;
+}
+.serviceDetail:hover , .serviceDetail2:hover{
+    background-color: #ffffff21 !important;
+    cursor: pointer !important;
+}
+
+
+
+.icon{
+    margin-bottom: 10px !important;
+}
+.title{
+    margin: 10px 0px !important;
+    text-align: center !important;
+}
+
+.detail{
+    font-size: 12px !important;
+    text-align: center !important;
+}

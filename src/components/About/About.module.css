@@ -1,0 +1,61 @@
+.about {
+    margin: 70px 0px !important;
+}
+
+.hello {
+    opacity: .2 !important;
+    font-size: 120px !important;
+    font-weight: 500 !important;
+    letter-spacing: 2px !important;
+    font-weight: bolder !important;
+    font-family: 'Paytone One', sans-serif !important;
+    text-align: center !important;
+}
+
+.AboutDetail {
+    display: flex !important ;
+    align-items: flex-start !important ;
+    justify-content: flex-start !important ;
+    flex-direction: row !important ;
+    margin: 30px 0px !important ;
+}
+
+.Flex2 {
+    width: 50% !important ;
+    display: flex !important ;
+    align-items: center !important ;
+    justify-content: center !important ;
+}
+
+.Image {
+    width: 300px !important ;
+}
+
+.Flex {
+    width: 50% !important ;
+}
+
+.bio{
+    display: flex !important ;
+    align-items: center !important ;
+    justify-content: flex-start !important ;
+    flex-wrap: wrap !important ;
+    gap: 20px !important ;
+}
+
+.bioDetail{
+    width: 50% !important ;
+}
+
+
+
+.BtnGroup{
+    display: flex !important ;
+    align-items: center !important ;
+    justify-content: flex-start !important ;
+    gap: 20px !important ;
+}
+
+.Btn {
+    width: 130px !important ;
+}

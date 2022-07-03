@@ -1,0 +1,17 @@
+.portfolio {
+    margin: 70px 0px !important;
+}
+
+.hello {
+    opacity: .2 !important;
+    font-size: 120px !important;
+    font-weight: 500 !important;
+    letter-spacing: 2px !important;
+    font-weight: bolder !important;
+    font-family: 'Paytone One', sans-serif !important;
+    text-align: center !important;
+}
+
+.Image {
+    border-radius: 0px 0px 10px 10px !important;
+}

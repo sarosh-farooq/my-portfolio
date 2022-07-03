@@ -1,0 +1,68 @@
+.skill {
+    margin: 70px 0px !important;
+}
+
+.hello {
+    opacity: .2 !important;
+    font-size: 120px !important;
+    font-weight: 500 !important;
+    letter-spacing: 2px !important;
+    font-weight: bolder !important;
+    font-family: 'Paytone One', sans-serif !important;
+    text-align: center !important;
+}
+
+.skills {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 20px 0px !important;
+}
+
+.skillList {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    width: 70% !important;
+    margin: 10px 0px !important;
+}
+
+.skillRate {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 80% !important;
+}
+
+
+.skillName {
+    font-size: 18px !important;
+    color: white !important;
+    display: inline !important;
+    width: 20% !important;
+    /* font-weight: 600 !important; */
+}
+
+
+.circle {
+    width: 25px !important;
+    height: 25px !important;
+    background-color: var(--primary) !important;
+    border-radius: 50% !important;
+    font-size: 10px !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.circleGrey {
+    width: 25px !important;
+    height: 25px !important;
+    background-color: #627aff3b !important;
+    border-radius: 50% !important;
+}

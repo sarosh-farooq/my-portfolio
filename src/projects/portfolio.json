@@ -1,0 +1,22 @@
+{
+    "portfolio": [
+        {
+            "name": "Pets Lover",
+            "url": "https://petslover.pk",
+            "img": "../images/portfolio/petslover.webp",
+            "type": "Next JS"
+        },
+        {
+            "name": "Hospice",
+            "url": "https://hospice.pk",
+            "img": "../images/portfolio/hospice.webp",
+            "type": "Html & Javascript"
+        },
+        {
+            "name": "Banking System",
+            "url": "https://github.com/sarosh-farooq/banking-system-react-firebase",
+            "img": "../images/portfolio/banking system.webp",
+            "type": "React & Firebase"
+        }
+    ]
+}

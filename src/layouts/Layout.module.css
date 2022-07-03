@@ -1,0 +1,11 @@
+.Link {
+    color: white;
+    cursor: pointer;
+    margin: 5px 0px;
+    transition: 0.2s ease-out;
+}
+
+.Link:hover{
+    color: var(--primary) !important;
+    text-decoration: underline;
+}

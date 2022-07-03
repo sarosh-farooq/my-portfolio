@@ -1,0 +1,19 @@
+h2, h3, h5,h6, h4{
+    color: white;
+}
+p{
+    text-align: justify;
+    margin: 15px 0px;
+ }
+
+ h1{
+    font-size: 45px !important;
+    margin: 20px 0x !important;
+ }
+
+ ul, ol{
+    margin: 10px;
+    margin-left: 40px;
+ }
+
+ 

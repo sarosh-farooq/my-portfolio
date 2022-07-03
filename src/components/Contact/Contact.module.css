@@ -1,0 +1,39 @@
+.contact {
+    margin: 100px 0px 70px 0px !important;
+    width: 100%
+}
+
+.hello {
+    opacity: .2 !important;
+    font-size: 120px !important;
+    font-weight: 500 !important;
+    letter-spacing: 2px !important;
+    font-weight: bolder !important;
+    font-family: 'Paytone One', sans-serif !important;
+    text-align: center !important;
+}
+
+
+.contactBox{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 60% !important;
+    gap: 20px !important;
+    flex-direction: column !important;
+    margin-top: 40px !important;
+}
+
+
+.form {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.Btn{
+    width: 170px !important;
+    height: 43px !important;
+}
