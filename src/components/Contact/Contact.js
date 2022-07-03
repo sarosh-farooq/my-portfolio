@@ -45,7 +45,7 @@ const Contact = () => {
     return (
         <Box id="contactme" className={styles.contact}>
             <Typography className={styles.hello} variant="h2">Contact</Typography>
-            <form className={styles.form} id="contact-form" name="contact-form" method='POST' netlify onSubmit="submit">
+            <form className={styles.form} id="contact-form" name="contact-form" method="POST" data-netlify="true" onSubmit="submit">
                 <Box className={styles.contactBox}>
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Name*" name="name" />
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Email Address*" name="email" />
