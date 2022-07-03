@@ -32,7 +32,7 @@ const Contact = () => {
     return (
         <Box id="contact" className={styles.contact}>
             <Typography className={styles.hello} variant="h2">Contact</Typography>
-            <form className={styles.form} name="contact" method='post' netlify='true' onSubmit="submit">
+            <form className={styles.form} name="contact" method='post' netlify onSubmit="submit">
                 <Box className={styles.contactBox}>
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Name*" name="full_name" value={userData.full_name} onChange={postUserData} />
                     <TextField hiddenLabel fullWidth={true} variant="outlined" placeholder="Your Email Address*" name="email" value={userData.email} onChange={postUserData} />
