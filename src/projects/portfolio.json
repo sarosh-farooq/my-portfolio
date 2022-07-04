@@ -4,7 +4,7 @@
             "name": "Pets Lover",
             "url": "https://petslover.pk",
             "img": "../images/portfolio/petslover.webp",
-            "type": "Next JS"
+            "type": "Next JS, Redux & Material UI"
         },
         {
             "name": "Hospice",
@@ -16,7 +16,25 @@
             "name": "Banking System",
             "url": "https://github.com/sarosh-farooq/banking-system-react-firebase",
             "img": "../images/portfolio/banking system.webp",
-            "type": "React & Firebase"
+            "type": "React JS & Firebase"
+        },
+        {
+            "name": "Cyber Sumoz",
+            "url": "https://cyber-sumoz.vercel.app",
+            "img": "../images/portfolio/cyber sumoz.webp",
+            "type": "Next JS & CSS"
+        },
+        {
+            "name": "Portfolio",
+            "url": "https://saroshfarooq.netlify.app",
+            "img": "../images/portfolio/portfolio.webp",
+            "type": "Gatsby JS & Material UI"
+        },
+        {
+            "name": "Regular Expressions",
+            "url": "https://sarosh-farooq.github.io/react-regular-expressions/",
+            "img": "../images/portfolio/regular-expressions.webp",
+            "type": "React JS & Material UI"
         }
     ]
 }

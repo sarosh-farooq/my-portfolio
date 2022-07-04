@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 import * as styles from './Portfolio.module.css'
-import { Box, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
+
 import IconButton from '@mui/material/IconButton';
-import MuiLink from '@mui/material';
+
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
+import { GatsbyImage } from "gatsby-plugin-image"
+import { useTheme } from '@mui/material/styles';
+
 
 import StyledTabList from '../styled/StyledTabList'
 
@@ -19,6 +21,8 @@ import StyledTabList from '../styled/StyledTabList'
 const TabList = ["All", "Next JS", "React JS", "Gatsby JS", "Material UI"]
 
 const Portfolio = () => {
+
+
 
     const data = useStaticQuery(graphql`
     query blogs {
@@ -41,54 +45,55 @@ const Portfolio = () => {
       }
 
     `)
-
+    const theme = useTheme();
     const [portfolio, setPortfolio] = useState(data.allProjectsJson.edges[0].node.portfolio);
-
+    const [filter, setFilter] = useState(portfolio);
     const [value, setValue] = React.useState(0);
+    const [filterData, setFilterData] = useState("");
+
 
 
     return (
         <Box id="portfolio" className={styles.portfolio}>
             <Typography className={styles.hello} variant="h2">PORTFOLIO</Typography>
             <Box sx={{ width: '100%', typography: 'body1', display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 2 }}>
-                <StyledTabList value={value} setValue={setValue} TabList={TabList} />
+                <StyledTabList value={value} setValue={setValue} TabList={TabList} setFilter={setFilter} filter={filter} portfolio={portfolio} isPortfolio={true} />
             </Box>
             <Box>
-                <ImageList cols={3} gap={8}>
-                    {portfolio.map((item, index) => (
-                        <ImageListItem key={index}>
-                            {/* <img
-                                src={`${item.img}?w=248&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                            /> */}
-                            <Box className={styles.Image}>
-                                {/* <Img fluid={item.img.childImageSharp.fluid} /> */}
-                                <GatsbyImage image={item.img.childImageSharp.gatsbyImageData} />
-                            </Box>
+                <Grid container spacing={2}>
+                    {/* <ImageList cols={3} gap={8}> */}
+                    {filter.map((item, index) => (
+                        <Grid item xs={12} sm={6} md={4}>
+                            <ImageListItem key={index}>
 
-                            <ImageListItemBar
-                                title={item.name}
-                                subtitle={item.type}
-                                actionIcon={
-                                 
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                <Box className={styles.Image}>
+                                    {/* <Img fluid={item.img.childImageSharp.fluid} /> */}
+                                    <GatsbyImage image={item.img.childImageSharp.gatsbyImageData} />
+                                </Box>
 
-                                        <IconButton
-                                            sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                            aria-label={`info about ${item.name}`}
-                                        >
-                                            <OpenInNewIcon />
-                                        </IconButton>
-                                    </a>
-                                 
+                                <ImageListItemBar
+                                    title={item.name}
+                                    subtitle={item.type}
+                                    actionIcon={
 
-                                }
-                            />
-                        </ImageListItem>
+                                        <a href={item.url} target="_blank" rel="noopener noreferrer">
+
+                                            <IconButton
+                                                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                                                aria-label={`info about ${item.name}`}
+                                            >
+                                                <OpenInNewIcon />
+                                            </IconButton>
+                                        </a>
+
+
+                                    }
+                                />
+                            </ImageListItem>
+                        </Grid>
                     ))}
-                </ImageList>
+                    {/* </ImageList> */}
+                </Grid>
             </Box>
         </Box>
     )

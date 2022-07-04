@@ -17,7 +17,7 @@ const Projects = () => {
                         placeholder="blurred"
                         className={styles.image}
                     />
-                    <Typography variant="subtitle2" sx={{textAlign: 'center'}}>10+ Projects</Typography>
+                    <Typography variant="subtitle2" sx={{textAlign: 'center', fontSize: {xs: '10px', sm: '14px', md: 'inherit'}}}>10+ Projects</Typography>
                 </Box>
                 <Box className={styles.item}>
                     <StaticImage
@@ -27,7 +27,7 @@ const Projects = () => {
                         className={styles.image}
                         
                     />
-                    <Typography variant="subtitle2" sx={{textAlign: 'center'}}>0 Projects</Typography>
+                    <Typography variant="subtitle2" sx={{textAlign: 'center', fontSize: {xs: '10px', sm: '14px', md: 'inherit'}}}>0 Projects</Typography>
                 </Box>
                 <Box className={styles.item}>
                     <StaticImage
@@ -37,7 +37,7 @@ const Projects = () => {
                         className={styles.image}
                         
                     />
-                    <Typography variant="subtitle2" sx={{textAlign: 'center'}}>20+ Repositories</Typography>
+                    <Typography variant="subtitle2" sx={{textAlign: 'center', fontSize: {xs: '10px', sm: '14px', md: 'inherit'}}}>20+ Repositories</Typography>
                 </Box>
 
             </Box>

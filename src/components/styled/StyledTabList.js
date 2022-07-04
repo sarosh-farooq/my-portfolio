@@ -51,11 +51,30 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     }),
 );
 
-export default function CustomizedTabs({ value, setValue, TabList }) {
+export default function CustomizedTabs({ value, setValue, TabList, setFilter, filter, portfolio, isPortfolio }) {
 
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
+        console.log(newValue)
+        if (isPortfolio) {
+
+            if (newValue == 0) {
+                setFilter(portfolio)
+            }
+            else if (newValue == 1) {
+                setFilter(portfolio.filter(item => item.type.includes('Next JS')))
+            }
+            else if (newValue == 2) {
+                setFilter(portfolio.filter(item => item.type.includes('React JS')))
+            }
+            else if (newValue == 3) {
+                setFilter(portfolio.filter(item => item.type.includes('Gatsby JS')))
+            }
+            else if (newValue == 4) {
+                setFilter(portfolio.filter(item => item.type.includes('Material UI')))
+            }
+        }
     };
 
     return (
@@ -63,10 +82,12 @@ export default function CustomizedTabs({ value, setValue, TabList }) {
         <StyledTabs
             value={value}
             onChange={handleChange}
-            aria-label="styled tabs example"
+            variant="scrollable"
+            scrollButtons="auto"
+            aria-label="scrollable auto tabs example"
         >
             {TabList.map((item, index) =>
-                    <StyledTab label={item} key={index} />
+                <StyledTab label={item} key={index} />
             )}
         </StyledTabs>
 

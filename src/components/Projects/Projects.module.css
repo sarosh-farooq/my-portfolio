@@ -12,11 +12,11 @@
     text-align: center !important;
 }
 
-.image{
+.image {
     width: 120px !important;
 }
 
-.list{
+.list {
     margin: 20px 0px !important;
     display: flex !important;
     align-items: center !important;
@@ -34,4 +34,44 @@
     padding: 20px !important;
     border-radius: 5px !important;
     cursor: pointer !important;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hello {
+        font-size: 80px !important;
+    }
+
+    .image {
+        width: 80px !important;
+    }
+
+    .item {
+        margin: 0px 10px !important;
+        width: 180px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+        font-size: 60px !important;
+    }
+
+    .image {
+        width: 50px !important;
+    }
+
+    .item {
+        margin: 0px 10px !important;
+        width: 120px !important;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .hello {
+        font-size: 40px !important;
+    }
 }

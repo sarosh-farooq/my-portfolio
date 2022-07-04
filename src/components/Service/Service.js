@@ -14,7 +14,7 @@ const Service = () => {
                     spacing={4}
                 >
 
-                    <Grid container item xs={4}
+                    <Grid container item xs={12} sm={6} md={4}
                         direction="column"
                         justifyContent="center"
                         alignItems="center"
@@ -33,7 +33,7 @@ const Service = () => {
                             <Typography variant="body2" className={styles.detail}>Next.js gives you the best developer experience with all the features you need for production.</Typography>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={4}
+                    <Grid container item xs={12} sm={6} md={4}
                         direction="column"
                         justifyContent="center"
                         alignItems="center">
@@ -52,7 +52,7 @@ const Service = () => {
                             <Typography variant="body2" className={styles.detail}>React makes it painless to create interactive UIs. Design simple views for each state in your application.</Typography>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={4}
+                    <Grid container item xs={12} sm={6} md={4}
                         direction="column"
                         justifyContent="center"
                         alignItems="center">
@@ -71,7 +71,7 @@ const Service = () => {
                             <Typography variant="body2" className={styles.detail}>Gatsby is the fast and flexible framework that makes building websites with any CMS, API, or database fun again.</Typography>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={4}
+                    <Grid container item xs={12} sm={6} md={4}
                         direction="column"
                         justifyContent="center"
                         alignItems="center">
@@ -90,7 +90,7 @@ const Service = () => {
                             <Typography variant="body2" className={styles.detail}>MUI offers a comprehensive suite of UI tools to help you ship new features faster and to build the website</Typography>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={4}
+                    <Grid container item xs={12} sm={6} md={4}
                         direction="column"
                         justifyContent="center"
                         alignItems="center">
@@ -109,7 +109,7 @@ const Service = () => {
                             <Typography variant="body2" className={styles.detail}>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90</Typography>
                         </Grid>
                     </Grid>
-                    <Grid container item xs={4}
+                    <Grid container item xs={12} sm={6} md={4}
                         direction="column"
                         justifyContent="center"
                         alignItems="center">

@@ -69,8 +69,12 @@ const About = () => {
                                         )}
                                     </Grid>
                                     <Box className={styles.BtnGroup}>
-                                        <Button variant="outlined"  className={styles.Btn}>Contact Me</Button>
-                                        <Button variant="contained" className={styles.Btn}>Hire Me</Button>
+                                        <a href="mailto:sarosh.faroq@gmail.com" style={{ textDecoration: 'none' }}>
+                                            <Button variant="outlined" className={styles.Btn}>Contact Me</Button>
+                                        </a>
+                                        <a style={{ textDecoration: 'none' }} href="https://www.fiverr.com/saroshfarooq" target="_blank" rel="noopener noreferrer">
+                                            <Button variant="contained" className={styles.Btn}>Hire Me</Button>
+                                        </a>
                                     </Box>
                                 </Box>
                             </TabPanel>
@@ -97,7 +101,7 @@ const About = () => {
 
                             </TabPanel>
                             <TabPanel value={value} index={2}>
-                                <Typography variant="body1">Experience</Typography>
+                                <Typography variant="body2">Check out me Linkedin Account</Typography>
                             </TabPanel>
                         </Box>
                     </Box>

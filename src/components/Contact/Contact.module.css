@@ -37,3 +37,25 @@
     width: 170px !important;
     height: 43px !important;
 }
+
+
+@media screen and (max-width: 900px) {
+    .hello {
+        font-size: 80px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+        font-size: 60px !important;
+    }
+    .contactBox{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hello {
+        font-size: 40px !important;
+    }
+}

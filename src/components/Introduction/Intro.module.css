@@ -12,7 +12,6 @@
 
 .noBold {
     font-weight: 200;
-    
 }
 
 .hr {
@@ -50,4 +49,24 @@
 
 .Btn{
     transform: rotate(270deg);
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .hello {
+        font-size: 150px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+        font-size: 100px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hello {
+        font-size: 70px !important;
+    }
 }

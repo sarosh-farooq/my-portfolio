@@ -12,7 +12,7 @@
     text-align: center !important;
 }
 
-.serviceDetail{
+.serviceDetail {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -21,7 +21,8 @@
     padding: 20px !important;
     border-radius: 5px !important;
 }
-.serviceDetail2{
+
+.serviceDetail2 {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -31,22 +32,43 @@
     background-color: #ffffff21 !important;
     border-radius: 5px !important;
 }
-.serviceDetail:hover , .serviceDetail2:hover{
+
+.serviceDetail:hover, .serviceDetail2:hover {
     background-color: #ffffff21 !important;
     cursor: pointer !important;
 }
 
 
 
-.icon{
+.icon {
     margin-bottom: 10px !important;
 }
-.title{
+
+.title {
     margin: 10px 0px !important;
     text-align: center !important;
 }
 
-.detail{
+.detail {
     font-size: 12px !important;
     text-align: center !important;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hello {
+        font-size: 80px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+        font-size: 60px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hello {
+        font-size: 40px !important;
+    }
 }

@@ -15,3 +15,22 @@
 .Image {
     border-radius: 0px 0px 10px 10px !important;
 }
+
+
+@media screen and (max-width: 900px) {
+    .hello {
+        font-size: 80px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+        font-size: 60px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hello {
+        font-size: 40px !important;
+    }
+}

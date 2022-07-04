@@ -48,6 +48,10 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
         '&.Mui-focusVisible': {
             backgroundColor: 'rgba(100, 95, 228, 0.32)',
         },
+        [theme.breakpoints.down('md')]: {
+            fontSize: '12px',
+            minWidth: '50px',
+        },
     }),
 );
 
@@ -81,7 +85,6 @@ export default function CustomizedTabs() {
             aria-label="styled tabs example"
         >
             <StyledTab label="Home" />
-
             <StyledTab label="About" />
             <StyledTab label="Service" />
             <StyledTab label="Portfolio" />

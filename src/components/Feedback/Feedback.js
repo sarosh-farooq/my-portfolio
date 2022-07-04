@@ -53,11 +53,11 @@ const Feedback = () => {
             <Typography className={styles.hello} variant="h2">FEEDBACK</Typography>
             <Box className={styles.stepper}>
                 <QuoteIcon color='primary' className={styles.notion} />
-                <Box sx={{ height: 255, maxWidth: 400, width: '100%', p: 2, color: 'white' }}>
-                    <Typography variant="subtitle1" className={styles.description} sx={{ textAlign: 'center' }}>{steps[activeStep].description}</Typography>
+                <Box sx={{ height: 255, maxWidth: {sm: 400, xs: '60%'}, width: '100%', p: 2, color: 'white' }}>
+                    <Typography variant="subtitle1" className={styles.description} sx={{ textAlign: 'center', fontSize: {xs: '12px' , sm: '14px', md: '16px'} }}>{steps[activeStep].description}</Typography>
                     <Box>
                         <Typography variant="h5" color="primary" sx={{ textAlign: 'center', fontWeight: 600, mt: 2 }}>{steps[activeStep].label}</Typography>
-                        <Typography variant="subtitle1" sx={{ textAlign: 'center'}}>{steps[activeStep].company}</Typography>
+                        <Typography variant="subtitle1" sx={{ textAlign: 'center', fontSize: {xs: '16px',sm: '20px', md: '24px'}}}>{steps[activeStep].company}</Typography>
                     </Box>
                 </Box>
 
@@ -66,7 +66,7 @@ const Feedback = () => {
                     steps={maxSteps}
                     position="static"
                     activeStep={activeStep}
-                    sx={{ backgroundColor: 'transparent', color: 'transparent', top: '50%', width: '80%', position: 'absolute' }}
+                    sx={{ backgroundColor: 'transparent', color: 'transparent', top: '50%', width: {xs: '100%', sm: '90%', md: '80%'}, position: 'absolute' }}
                     nextButton={
                         <Button
                             size="small"

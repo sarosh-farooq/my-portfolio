@@ -66,3 +66,47 @@
     background-color: #627aff3b !important;
     border-radius: 50% !important;
 }
+
+
+
+@media screen and (max-width: 900px) {
+    .hello {
+        font-size: 80px !important;
+    }
+    .skillList {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hello {
+        font-size: 60px !important;
+    }
+    .skillList {
+        width: 100% !important;
+    }
+    .circle {
+        width: 20px !important;
+        height: 20px !important;
+        font-size: 10px !important;
+        color: white !important;
+    }
+    
+    .circleGrey {
+        width: 20px !important;
+        height: 20px !important;
+        background-color: #627aff3b !important;
+        border-radius: 50% !important;
+    }
+    .skillName {
+        font-size: 12px !important;
+        /* font-weight: 600 !important; */
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .hello {
+        font-size: 40px !important;
+    }
+}

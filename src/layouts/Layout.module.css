@@ -1,8 +1,14 @@
 .Link {
     color: white;
     cursor: pointer;
-    margin: 5px 0px;
+    margin: 0px 0px;
     transition: 0.2s ease-out;
+    text-transform: capitalize;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
 }
 
 .Link:hover{
