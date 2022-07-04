@@ -29,16 +29,6 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     "name": "images",
-    //     "path": "./src/images/"
-    //   },
-    //   __key: "images",
-    // },
-
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,14 +37,24 @@ module.exports = {
           object.project ? `Project` : `Json`,
       },
     },
-  
+   
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      /* Include plugin */
+      resolve: "gatsby-omni-font-loader",
+
+      /* Plugin options */
       options: {
-        typekit: {
-          id: process.env.TYPEKIT_ID,
-        },
+
+        /* Font loading mode */
+        mode: "async",
+
+        /* Enable font loading listener to handle FOUT */
+        enableListener: true,
+
+        /* Preconnect URL-s. This example is for Google Fonts */
+        preconnect: ["https://fonts.googleapis.com/css2?family=Julee&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Paytone+One&display=swap"],
+
       },
-    },
+    }
   ]
 };

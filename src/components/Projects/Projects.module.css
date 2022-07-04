@@ -50,8 +50,6 @@
         margin: 0px 10px !important;
         width: 180px !important;
     }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -60,12 +58,15 @@
     }
 
     .image {
-        width: 50px !important;
+        width: 80px !important;
     }
 
     .item {
-        margin: 0px 10px !important;
-        width: 120px !important;
+        margin: 10px 0px !important;
+    }
+
+    .list {
+        flex-direction: column !important;
     }
 
 }

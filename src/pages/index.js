@@ -12,7 +12,7 @@ import Blogs from "../components/Blogs/Blogs";
 import Contact from "../components/Contact/Contact";
 
 
-const IndexPage = ({ data }) => {
+export default function Index ({ data }) {
 
   return (
     <Container>
@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
   );
 };
 
-export default IndexPage;
+
 
 
 export const query = graphql`

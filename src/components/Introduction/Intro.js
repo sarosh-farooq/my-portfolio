@@ -19,7 +19,7 @@ const Intro = () => {
         <hr className={styles.hr} />
       </Box>
       <Box>
-        <Typography variant="body1" sx={{fontSize: {xs: '16px',sm: '20px', md: '32px'}}}>Fort-end Developer with four years of <br /> work experience </Typography>
+        <Typography variant="body1" sx={{fontSize: {xs: '14px',sm: '18px', md: '22px'}, mr:5}}>Fort-end Developer with four years of <br /> work experience </Typography>
         <a href="mailto:sarosh.faroq@gmail.com" style={{textDecoration: 'none'}}>
           <Button sx={{ mt: 4 }} variant="contained">Contact Me</Button>
         </a>

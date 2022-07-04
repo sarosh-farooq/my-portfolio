@@ -11,16 +11,18 @@ const BlogDetail = ({ data }) => {
     const { title, metaDescription, date, category, image } = data.markdownRemark.frontmatter
 
     return (
-        <Container>
+        <Container sx={{mb:2}}>
 
             <Box>
                 <Img fluid={image.childImageSharp.fluid} />
-                <Typography variant="h1">{title}</Typography>
-                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space' }}>
+                <Typography variant="h1" sx={{textDecoration: 'underline', my:2, fontSize: {xs: '16px', sm: '18px', md: '20px'}}}>{title}</Typography>
+                
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', my:2 }}>
                     <Typography variant="body1">{date}</Typography>
                     <Typography variant="body1" color="primary" sx={{ fontWeight: 600 }}>{category}</Typography>
                 </Box>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
+                
             </Box>
         </Container>
     )
